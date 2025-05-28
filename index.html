@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Testing</title>
+</head>
+<body>
+  <h1>Receipt</h1>
+  <div id="output"></div>
+
+  <script>
+    fetch('data.json')
+      .then(response => response.json())
+      .then(data => {
+        const outputDiv = document.getElementById("output");
+        let html = `<p><strong>Store:</strong> ${data.store}</p>`;
+        html += `<p><strong>Date:</strong> ${data.date}</p>`;
+        html += `<h3>Items:</h3><ul>`;
+        data.items.forEach(item => {
+          html += `<li>${item.name} — Quantity: ${item.quantity}, Price: $${item.unit_price.toFixed(2)}</li>`;
+        });
+        html += `</ul>`;
+        outputDiv.innerHTML = html;
+      })
+      .catch(error => {
+        document.getElementById("output").textContent = "Failed to load JSON data.";
+        console.error("Error loading JSON:", error);
+      });
+  </script>
+</body>
+</html>
+`  
