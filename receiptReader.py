@@ -5,12 +5,17 @@ import time
 import os
 from dotenv import load_dotenv
 
+
 # Load environment variables from .env file
 load_dotenv()
 
 # Get API key from environment variable
-client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
-print("received, processing now...")
+print("HERE:", os.getenv('test'))
+api_key=os.getenv('Api_key')
+print(api_key)
+client = OpenAI(api_key=api_key)
+print("Received, processing now...")
+
 start_time = time.time()
 # Load and encode the image
 def encode_image(image_path):
