@@ -109,7 +109,6 @@ parsed_data = json.loads(json_text)
 with open("data.json", "w") as f:
     json.dump(parsed_data, f, indent=1)
 
-
 end_time = time.time()
 time_taken = end_time-start_time
 print("Time Taken: ", time_taken)
