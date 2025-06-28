@@ -13,4 +13,4 @@ The hopes is that I can get the ai to predict the expiration dates as a default 
 
 Currently a work in progress
 
-
+Planning to Implement OCR to reduce token count, and increase acuraccy 

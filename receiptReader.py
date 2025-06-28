@@ -26,9 +26,10 @@ base64_image = encode_image("images/FoodyWorld.jpg")
 
 # Send to GPT-4o with a strict receipt parser prompt
 response = client.chat.completions.create(
-    model="gpt-4o",
+    model="gpt-4.1-nano", 
     messages=[
         {
+            
             "role": "system",
             "content": """
 You are a smart OCR and receipt parser. Your sole purpose is to extract food-related data from receipt images.
@@ -87,7 +88,8 @@ Basically have it formated like a python dictionary.
                     }
                 }
             ]
-        }
+        },
+        
     ]
 )
 

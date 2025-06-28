@@ -3,7 +3,7 @@
  "date": "2025-05-02",
  "items": [
   {
-   "name": "Carnation - Evaporated Milk",
+   "name": "Carnation - Evaporated Mi",
    "quantity": 1,
    "unit_price": 2.99
   },
@@ -13,7 +13,7 @@
    "unit_price": 1.99
   },
   {
-   "name": "Da Tian Hai Yang - Fish Sauce",
+   "name": "Da Tian Hai Yang - Fish S",
    "quantity": 1,
    "unit_price": 1.99
   },
@@ -35,7 +35,7 @@
   {
    "name": "Blue Jay Orange (L)",
    "quantity": 1,
-   "unit_price": 4.24
+   "unit_price": 2.14
   }
  ]
 }
